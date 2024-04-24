@@ -51,9 +51,9 @@ spawn(function()
      pcall(function()
         if _G.AutoKaiton then
             repeat wait()
-            CheckHealth()
+            --CheckHealth()
             CheckLevel()
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace")[MON].HumanoidRootPart.CFrame * CFrame.new(0,16,0)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace")["NPC DAMAGE"][MON].HumanoidRootPart.CFrame * CFrame.new(0,16,0)
                 until _G.AutoKaiton == false 
             end
         end)
