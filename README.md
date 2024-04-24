@@ -53,7 +53,7 @@ spawn(function()
             repeat wait()
             CheckHealth()
             CheckLevel()
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace")["NPC DAMAGE"][MON].HumanoidRootPart.CFrame * CFrame.new(0,16,0)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace")[MON].HumanoidRootPart.CFrame * CFrame.new(0,16,0)
                 until _G.AutoKaiton == false 
             end
         end)
