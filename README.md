@@ -1,6 +1,3 @@
-
-
-
 function CheckLevel()
     local MyLevel = game.Players.LocalPlayer.Data.Levels.Value
     if MyLevel == 1 or plrlvl <= 200 then
@@ -38,7 +35,7 @@ end
     tween:Play()
 end]]
 
-if _G.AutoKaiton == true then
+--[[if _G.AutoKaiton == true then
     CheckHealth()
     local Noclip = Instance.new("Part",Workspace) 
     Noclip.Name = "Thepartformscript" 
@@ -47,7 +44,7 @@ if _G.AutoKaiton == true then
     Noclip.Transparency = 0.5 
     Noclip.Size = Vector3.new(10,-3,10) 
     Noclip.CFrame = Vector3.new(0,300,0)
-end
+end]]
 
 spawn(function()
     game:GetService("RunService").RenderStepped:Connect(function()
@@ -68,7 +65,7 @@ spawn(function()
         if _G.AutoKaiton == true then
             _G.HideHB = true -- true = hide / false = 0.5
             _G.Hitbox = true
-        for i,v in pairs(game:GetService("Workspace")["NPC DAMAGE"]:GetChildren()) do
+        for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
             v.HumanoidRootPart.Size = Vector3.new(26, 26, 26)
             v.HumanoidRootPart.CanCollide = false
             if _G.HideHB == true then
